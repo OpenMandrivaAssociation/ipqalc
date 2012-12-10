@@ -2,7 +2,7 @@
 
 Name:		ipqalc
 Version:	1.2
-Release:	%mkrel 1
+Release:	2
 Summary:	Small utility for IP address calculations
 Group:		Networking/Other
 License:	GPL
@@ -24,19 +24,17 @@ and network addresses as well as Cisco wildcard mask.
 %make
 
 %install
-%__rm -rf %{buildroot}
-
 # install binary
-%__mkdir_p %{buildroot}%{_bindir}
-%__cp %{oname} %{buildroot}%{_bindir}/%{name}
+mkdir -p %{buildroot}%{_bindir}
+cp %{oname} %{buildroot}%{_bindir}/%{name}
 
 # install locales
-%__mkdir_p %{buildroot}%{_datadir}/%{name}
-%__cp *.qm %{buildroot}%{_datadir}/%{name}/
+mkdir -p %{buildroot}%{_datadir}/%{name}
+cp *.qm %{buildroot}%{_datadir}/%{name}/
 
 # XDG menu entry
-%__mkdir_p %{buildroot}%{_datadir}/applications
-%__cat > %{buildroot}%{_datadir}/applications/%{name}.desktop << EOF
+mkdir -p %{buildroot}%{_datadir}/applications
+cat > %{buildroot}%{_datadir}/applications/%{name}.desktop << EOF
 [Desktop Entry]
 Type=Application
 Name=%{oname}
@@ -47,11 +45,14 @@ Terminal=false
 Categories=Utility;
 EOF
 
-%clean
-%__rm -rf %{buildroot}
-
 %files
 %{_bindir}/%{name}
 %{_datadir}/%{name}
 %{_datadir}/applications/%{name}.desktop
+
+
+%changelog
+* Fri Mar 30 2012 Andrey Bondrov <abondrov@mandriva.org> 1.2-1mdv2011.0
++ Revision: 788283
+- imported package ipqalc
 
