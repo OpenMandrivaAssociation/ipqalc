@@ -1,3 +1,4 @@
+%define oname ipQalc
 Name:		ipqalc
 Version:	1.5.2
 Release:	1
@@ -5,7 +6,7 @@ Summary:	Small utility for IP address calculations
 Group:		Networking/Other
 License:	GPL
 URL:		https://bitbucket.org/admsasha/ipqalc/
-Source0:	https://bitbucket.org/admsasha/ipqalc/downloads/%{name}-%{version}.tar.gz
+Source0:	https://bitbucket.org/admsasha/ipqalc/downloads/%{oname}-%{version}.tar.gz
 
 BuildRequires:	qt5-linguist-tools
 BuildRequires:  pkgconfig(Qt5Core)
