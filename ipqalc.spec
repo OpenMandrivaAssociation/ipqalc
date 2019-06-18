@@ -7,7 +7,7 @@ Group:		Networking/Other
 License:	GPL
 URL:		https://bitbucket.org/admsasha/ipqalc/
 Source0:	https://bitbucket.org/admsasha/ipqalc/downloads/%{oname}-%{version}.tar.gz
-
+BuildRequires:  qmake5
 BuildRequires:	qt5-linguist-tools
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Gui)
