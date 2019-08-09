@@ -8,6 +8,8 @@ URL:		https://bitbucket.org/admsasha/ipqalc/
 Source0:	https://bitbucket.org/admsasha/ipqalc/downloads/%{name}-%{version}.tar.gz
 
 BuildRequires:	qt5-linguist-tools
+BuildRequires:  qt5-macros
+BuildRequires:  qmake5
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Gui)
 BuildRequires:  pkgconfig(Qt5Widgets) 
