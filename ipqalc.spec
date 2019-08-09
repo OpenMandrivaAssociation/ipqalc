@@ -30,7 +30,6 @@ and network addresses as well as Cisco wildcard mask.
 
 %files
 %{_bindir}/%{name}
-%{_datadir}/%{name}/*
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.png 
 
