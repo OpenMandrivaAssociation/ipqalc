@@ -1,6 +1,6 @@
 %define oname ipQalc
 Name:		ipqalc
-Version:	1.5.2
+Version:	1.5.3
 Release:	1
 Summary:	Small utility for IP address calculations
 Group:		Networking/Other
@@ -31,5 +31,4 @@ and network addresses as well as Cisco wildcard mask.
 %{_bindir}/%{name}
 %{_datadir}/%{name}/*
 %{_datadir}/applications/%{name}.desktop
-%{_datadir}/pixmaps/%{name}.png 
-
+%{_datadir}/pixmaps/%{name}.png
